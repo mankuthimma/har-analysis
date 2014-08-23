@@ -49,7 +49,7 @@ train_data <- cbind(as.data.table(subject_train), y_train, x_train)
 data = rbind(test_data, train_data)
 ids = c("subject", "Activity_ID", "Activity_Label")
 data_labels = setdiff(colnames(data), ids)
-melt_data      = melt(data, id = ids, measure.vars = data_labels)
+melt_data = melt(data, id = ids, measure.vars = data_labels)
 
 ## Calculate average
 avg = dcast(melt_data, subject + Activity_Label ~ variable, mean)
