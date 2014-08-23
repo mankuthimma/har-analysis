@@ -12,6 +12,6 @@ $ wget https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%
 $ unzip HAR_dataset.zip -d data/
 ```
 
-Run the run_analysis.R
+Run the script run_analysis.R
 
 
